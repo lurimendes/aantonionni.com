@@ -1,0 +1,303 @@
+/*
+Theme Name: Antonionni
+Theme URI: https://aantonnioni.com/
+Author: Luiz Augusto Ferreira
+Author URI: https://lurimendes.com.br/
+Description: Armando Antonnioni's Portfolio
+Version: 1.0
+Text Domain: aantonnioni
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Normalize
+2.0 Accessibility
+3.0 Alignments
+4.0 Clearings
+5.0 Typography
+6.0 Forms
+7.0 Formatting
+8.0 Lists
+9.0 Tables
+10.0 Links
+11.0 Featured Image Hover
+12.0 Navigation
+13.0 Layout
+   13.1 Header
+   13.2 Front Page
+   13.3 Regular Content
+   13.4 Posts
+   13.5 Pages
+   13.6 Footer
+14.0 Comments
+15.0 Widgets
+16.0 Media
+   16.1 Galleries
+17.0 Customizer
+18.0 SVGs Fallbacks
+19.0 Media Queries
+20.0 Print
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Normalize
+Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
+--------------------------------------------------------------*/
+
+body {
+	margin:0;
+	padding:0;
+	color:white;
+	background-color:#1F1E23;
+	font-family: 'Titillium Web', sans-serif;
+	border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, rgba(121, 207, 169, 1), rgba(38, 148, 185, 1)) 1 100%;
+	border-right:0;
+  background-image:url(assets/images/bg.png);
+  background-repeat: no-repeat;
+	background-position:398px -145px;
+}
+
+.sidebar-top {
+	position:fixed;
+	top:100px;
+	left:-25px;
+	font-family: 'Teko', sans-serif;
+	font-size:20px;
+	-moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.sidebar-middle {
+	position:fixed;
+	bottom:50%;
+	left:-55px;
+	font-family: 'Teko', sans-serif;
+	font-size:20px;
+	-moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.sidebar-bottom {
+	position:fixed;
+	bottom:100px;
+	left:-10px;
+	font-family: 'Teko', sans-serif;
+	font-size:20px;
+	-moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.logo img {
+  position:absolute;
+  width:400px;
+  top:50%;
+  margin-top:-322px;
+  left:18%;
+  z-index:99999;
+}
+
+.menu-icon {
+  cursor:pointer;
+  position:absolute;
+  width:70px;
+  height:70px;
+  top:30px;
+  right:30px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#96e4a4+0,1f8fba+100 */
+  background: rgb(150,228,164); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(150,228,164,1) 0%, rgba(31,143,186,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(150,228,164,1) 0%,rgba(31,143,186,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(150,228,164,1) 0%,rgba(31,143,186,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96e4a4', endColorstr='#1f8fba',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.menu-icon-content {
+  width:66px;
+  height:66px;
+  margin-top:2px;
+  margin-left:2px;
+  background:#181C21;
+}
+.menu-icon-content img {
+  padding: 28px 24px;
+}
+.menu-items {
+  display:none;
+  text-align:right;
+  position:absolute;
+  right:30px;
+  top:110px;
+}
+.menu-items li {
+  display:block;
+  font-family:'Teko', sans-serif;
+  font-size:24px;
+  margin-bottom:10px;
+  background: -webkit-linear-gradient(#96E4A4, #1F8FBA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-items li.active {
+  color:white;
+  background: -webkit-linear-gradient(#FFF, #FFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  position:absolute;
+  width:450px;
+  top:50%;
+  margin-top:200px;
+  left:18%;
+  font-size:14px;
+  color:#676767;
+}
+
+.description .digital-designer {
+  font-family:'Teko', sans-serif;
+  font-size:22px;
+  color:white;
+  font-weight:400;
+  letter-spacing:0.5px;
+  margin-right:5px;
+}
+
+.description a {
+  text-decoration:none;
+  color:#2290BC;
+  font-weight:bold;
+}
+
+.scroll-text {
+  position:absolute;
+  width:200px;
+  text-align:center;
+  bottom:185px;
+  left:50%;
+  margin-left:-100px;
+  letter-spacing: 5px;
+  font-size: 10px;
+  color:#85C78F;
+}
+.scroll .mouse-icon {
+  position:absolute;
+  width:20px;
+  height:37px;
+  left:50%;
+  margin-left:-10px;
+  bottom:140px;
+  /*border:1px solid white;*/
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#96e4a4+0,1f8fba+100 */
+  background: rgb(150,228,164); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(150,228,164,1) 0%, rgba(31,143,186,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(150,228,164,1) 0%,rgba(31,143,186,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(150,228,164,1) 0%,rgba(31,143,186,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96e4a4', endColorstr='#1f8fba',GradientType=0 ); /* IE6-9 */
+}
+.scroll .inner-mouse-icon {
+  position:absolute;
+  width:18px;
+  height:35px;
+  margin-left:-8px;
+  left:9px;
+  top:1px;
+  /*border:1px solid white;*/
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background:#1A1B1F;
+}
+.scroll .scroll-line {
+  position:absolute;
+  width:1px;
+  height:150px;
+  left:50%;
+  bottom:0px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f8fba+0,96e4a4+100 */
+  background: rgb(31,143,186); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(31,143,186,1) 0%, rgba(150,228,164,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(31,143,186,1) 0%,rgba(150,228,164,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(31,143,186,1) 0%,rgba(150,228,164,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f8fba', endColorstr='#96e4a4',GradientType=0 ); /* IE6-9 */
+}
+
+/* Portfolio Section */
+section.portfolio {
+  margin-top:400px;
+  height:700px;
+}
+
+section.portfolio .portfolio-box {
+  position:absolute;
+  width:1400px;
+  height:544px;
+  left:50%;
+  margin-left:-700px;
+  border:1px solid #252F38;
+}
+
+section.portfolio .portfolio-sidemenu {
+  margin:0;
+  padding:0;
+}
+section.portfolio .portfolio-sidemenu li {
+  display:block;
+  width:5px;
+  height:76px;
+  margin-bottom:2px;
+
+  background-image: linear-gradient(to top, rgba(31,143,186,1) 0%,rgba(150,228,164,1) 100%);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  /* <- here it is */
+}
+
+section.portfolio .portfolio-sidemenu li:hover {
+  width:10px;
+}
+
+section.portfolio .project-info-container {
+  position:absolute;
+  width:450px;
+  top:70px;
+  left:90px;
+  color:#696969;
+}
+
+section.portfolio .project-info-container span {
+  margin-right:20px;
+}
+
+section.portfolio .project-info-container h2 {
+  font-family: 'Teko', sans-serif;
+  font-weight:400;
+  font-size:90px;
+  margin-top:50px;
+  margin-bottom:0;
+  background: -webkit-linear-gradient(#96E4A4, #1F8FBA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section.portfolio .project-info-container p {
+  margin-top:0;
+}
+
+section.portfolio .project-img {
+  position:absolute;
+  top:-235px;
+  right:0;
+}
