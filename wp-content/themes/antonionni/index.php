@@ -67,8 +67,8 @@
     </section>
 
     <section class="portfolio">
-      <div class="portfolio-box">
-        <ul class="portfolio-sidemenu">
+      <div class="section-box">
+        <ul class="section-sidemenu">
           <!-- @TODO: add text inside each link from WP to make it semantic -->
           <li></li>
           <li></li>
@@ -78,7 +78,7 @@
           <li></li>
           <li></li>
         </ul>
-        <div class="project-info-container">
+        <div class="section-info-container">
           <span class="">CLIENT EA Sports</span>
           <span class="">COMPANY EA Sports</span>
           <span class="">YEAR 2016</span>
@@ -95,6 +95,93 @@
         </div>
       </div>
     </section>
+
+    <section class="experience">
+      <div class="section-box">
+        <ul class="section-sidemenu">
+          <!-- @TODO: add text inside each link from WP to make it semantic -->
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="section-info-container">
+          <h2>EXPERIENCE</h2>
+          <p>
+            I'm a Digital Designer who is passionate about the "black magic" of visual arts.
+            Two survival kits are important to me: a sketchpad with a fine-tipped pen, and
+            my Wacom with a fully-charged laptop! There is no project or client who is able
+            to resist such creativity and focus.
+          </p>
+          <p>
+            I have more than 10 years experience with online and print design, 3D and
+            concept. I've worked on numerous websites, apps, books, campaigns on social
+            media, characters, brands for different market sectors, games and much more.
+          </p>
+          <p>
+            My coworkers say that I have an energetic personality, positive attitude, high
+            enthusiasm, and that I'm a diligent and responsible person.
+            I'm fluent in Portuguese and advanced in English.
+          </p>
+        </div>
+        <div class="experience-round-shade experience-round-shade1"></div>
+        <div class="experience-round-shade experience-round-shade2"></div>
+        <div class="experience-round-shade experience-round-shade3"></div>
+        <div class="experience-round experience-round-gradient-border"></div>
+        <div class="experience-round experience-round-container">
+          <div class="experience-round-content">
+            <h2>SOME OF MY CLIENTS</h2>
+            <p>
+              FIFA, Coca-Cola Brasil, Trousseau, 20th Century Fox, TNT, FIAT, IMT Media Lab, SEED Startups and Entrepreneurship Ecosystem Development of Minas Gerias, Empório Santa Maria, St Marche Supermercado, Estado de Minas, Grupo EPO, Governo de Minas Gerais, AuDITIONS Brasil,  AngloGold Ashant, Ricardo Eletro, Globo Minas, Grupo Séculus, Construtora Caparaó, Escola Brasileira de Psicanálise, Fundação Clóvis Salgado, Orquestra Filarmônica de Minas Gerais, Sada Cruzeiro, Luiz Lanza Arquitetura + Design, Construtora Neocasa, Escola Sesi, Nordweg,  Sistema Mineiro de Informação, Cursos Soma, Condomínio Vila da Serra,  Carta Consulta, TWM, Queijos São Vicente, Aneethun, Le Biscuit, Self Shop, Ciências Médicas Minas Gerais, Universidade Tiradentes, StreetBike Shop,
+              Boline Bolos Caseiros, BH Eventos, CellSeq Solutions, Criasol, Data Viva, Brasil LAB, Pré-UFMG, Portal do Incentivo, Taiyang Editora, Uai Courier, Vale do Rio Doce, Atelier Sugar Design, Projeto Brasil,  Centro de Oftalmologia Avançada.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="section-box">
+        <div class="left-container">
+          <h2>LET'S TALK</h2>
+          <p>
+            Feel free to ping me to discuss your idea, feedback or<br>
+            potential work opportunities
+          </p>
+          <br>
+          <a href="#">
+            <span>
+              SEND ME AN EMAIL
+            </span>
+          </a>
+          <br>
+          <a href="#">
+            <span>
+              CONNECT ON LINKEDIN
+            </span>
+          </a>
+          <br>
+          <a href="#">
+            <span>
+              FOLLOW ME ON TWITTER
+            </span>
+          </a>
+          <br>
+          <a href="#">
+            <span>
+              HELLO! +1 604 352 6809
+            </span>
+          </a>
+        </div>
+        <div class="right-container">
+          <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/nothing-can-stop-a-good-idea.png" alt="Nothing Can Stop A Good Idea">
+        </div>
+      </div>
+    </section>
+    
     
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>

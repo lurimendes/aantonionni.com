@@ -234,13 +234,8 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f8fba', endColorstr='#96e4a4',GradientType=0 ); /* IE6-9 */
 }
 
-/* Portfolio Section */
-section.portfolio {
-  margin-top:400px;
-  height:700px;
-}
-
-section.portfolio .portfolio-box {
+/* Section Common Styles */
+.section-box {
   position:absolute;
   width:1400px;
   height:544px;
@@ -249,11 +244,11 @@ section.portfolio .portfolio-box {
   border:1px solid #252F38;
 }
 
-section.portfolio .portfolio-sidemenu {
+.section-sidemenu {
   margin:0;
   padding:0;
 }
-section.portfolio .portfolio-sidemenu li {
+.section-sidemenu li {
   display:block;
   width:5px;
   height:76px;
@@ -265,11 +260,11 @@ section.portfolio .portfolio-sidemenu li {
   background-attachment: fixed;  /* <- here it is */
 }
 
-section.portfolio .portfolio-sidemenu li:hover {
+.section-sidemenu li:hover {
   width:10px;
 }
 
-section.portfolio .project-info-container {
+.section-info-container {
   position:absolute;
   width:450px;
   top:70px;
@@ -277,11 +272,11 @@ section.portfolio .project-info-container {
   color:#696969;
 }
 
-section.portfolio .project-info-container span {
+.section-info-container span {
   margin-right:20px;
 }
 
-section.portfolio .project-info-container h2 {
+.section-info-container h2 {
   font-family: 'Teko', sans-serif;
   font-weight:400;
   font-size:90px;
@@ -292,12 +287,159 @@ section.portfolio .project-info-container h2 {
   -webkit-text-fill-color: transparent;
 }
 
-section.portfolio .project-info-container p {
+.section-info-container p {
   margin-top:0;
+}
+
+/* Portfolio Section */
+section.portfolio {
+  margin-top:400px;
+  height:700px;
 }
 
 section.portfolio .project-img {
   position:absolute;
   top:-235px;
   right:0;
+}
+
+/* Experience Section*/
+section.experience {
+  margin-top:400px;
+  height:700px;
+}
+
+section.experience .section-info-container h2 {
+  margin-top:-35px;
+}
+
+section.experience .experience-round-shade {
+  position:absolute;
+  width:725px;
+  height:725px;
+  background:white;
+  border-radius:100%;
+  opacity:0.07;
+}
+
+section.experience .experience-round-shade1 {
+  top:-87px;
+  right:110px;
+}
+
+section.experience .experience-round-shade2 {
+  top:-137px;
+  right:40px;
+}
+
+section.experience .experience-round-shade3 {
+  top:-37px;
+  right:60px;
+}
+
+section.experience .experience-round {
+  position:absolute;
+  width:725px;
+  height:725px;
+  top:-87px;
+  right:75px;
+  border-radius:100%;
+}
+
+section.experience .experience-round-gradient-border {
+  width:740px;
+  height:740px;
+  top:-93px;
+  right:68px;
+  background: rgb(150,228,164); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(150,228,164,1) 0%, rgba(31,143,186,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(150,228,164,1) 0%,rgba(31,143,186,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(150,228,164,1) 0%,rgba(31,143,186,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96e4a4', endColorstr='#1f8fba',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+section.experience .experience-round-container {
+  background:white;
+}
+
+section.experience .experience-round-content {
+  height:472px;
+  margin:129px 84px 0px 97px;
+  text-align:center;
+}
+
+section.experience .experience-round-content h2 {
+  font-family: "Teko", sans-serif;
+  font-weight:normal;
+  font-size:30px;
+  color:#1B1925;
+}
+
+section.experience .experience-round-content p {
+  margin-top:60px;
+  color:#777777;
+}
+
+/* Contact Section*/
+section.contact {
+  margin-top:400px;
+  height:700px;
+}
+
+section.contact .section-box {
+  position:relative;
+  border:0;
+  color:#696969;
+}
+
+section.contact .left-container {
+  position:absolute;
+  width:50%;
+  height:100%;
+  text-align: center;
+}
+
+section.contact .left-container h2 {
+  font-family: 'Teko', sans-serif;
+  font-weight:400;
+  font-size:90px;
+  margin-top:50px;
+  margin-bottom:0;
+  background: -webkit-linear-gradient(#96E4A4, #1F8FBA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section.contact .left-container a {
+  display:inline-block;
+  width:250px;
+  padding:2px;
+  text-decoration:none;
+  text-align:left;
+  color:white;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#96e4a4+0,1f8fba+100 */
+  background: rgb(150,228,164); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(150,228,164,1) 0%, rgba(31,143,186,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(150,228,164,1) 0%,rgba(31,143,186,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(150,228,164,1) 0%,rgba(31,143,186,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96e4a4', endColorstr='#1f8fba',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  margin-bottom:10px;
+}
+
+section.contact .left-container a span {
+  display:block;
+  padding:10px 10px 10px 45px;
+  background:#1F1E23;
+}
+
+section.contact .right-container {
+  position:absolute;
+  width:50%;
+  height:100%;
+  right:0;
+}
+
+section.contact .right-container img {
+  position:relative;
+  top:-152px;
 }
